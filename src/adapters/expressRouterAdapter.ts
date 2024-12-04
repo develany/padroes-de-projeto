@@ -7,7 +7,7 @@ export const expressRouterAdapter=(controller: Controller) => {
       body: req.body,
     };
     const httpResponse = await controller.handle(httpRequest);
-    if (httpResponse.statusCode === 201) {
+    if (httpResponse.statusCode === 201 || httpResponse.statusCode === 204) {
       res.status(httpResponse.statusCode).json(httpResponse.body);
     } else {
       res.status(httpResponse.statusCode).json({

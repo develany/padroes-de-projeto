@@ -1,0 +1,8 @@
+POST https://congenial-carnival-pvrpv45v5gx365pg-3000.app.github.dev/api/tasks
+content-type: application/json
+
+{
+    "title": "OI",
+	"description": "oiii",
+	"date": "20/02/2024"
+}
